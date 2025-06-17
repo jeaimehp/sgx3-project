@@ -12,6 +12,10 @@ def hello_world():
 def hello_name(name):
     return f'Hello, {name}!\n'
 
+@app.route('/sgx3', methods=['GET'])
+def hello_sgxers():
+    return f'Hello Howdy fellow SGXers!\n'
+
 
 # the next statement should usually appear at the bottom of a flask app
 if __name__ == '__main__':
